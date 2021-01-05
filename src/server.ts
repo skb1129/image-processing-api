@@ -1,11 +1,16 @@
 import express from "express";
-import bodyParser from "body-parser";
+
+import { image } from "./apis";
+import { fileParser } from "./utils";
 
 const app = express();
 const PORT = 8000;
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.static("images"));
+
+app.use(fileParser);
+
+app.use("/image", image);
 
 app.listen(PORT, () => {
   console.log("HTTP server running on port:", PORT);
