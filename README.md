@@ -48,7 +48,7 @@ This API will return a filename that can be used to download the resized image.
 
 Example:
 ```bash
-# Response from API: 8fca0300-4fe8-11eb-ba0a-53c1805778e7.jpg
+# Response from API: { "filename": "8fca0300-4fe8-11eb-ba0a-53c1805778e7.jpg" }
 curl --location --request GET 'http://localhost:8000/8fca0300-4fe8-11eb-ba0a-53c1805778e7.jpg'
 ```
 

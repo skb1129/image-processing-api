@@ -5,7 +5,6 @@ module.exports = {
     },
   },
   moduleFileExtensions: ["ts", "js"],
-  setupFiles: ["dotenv/config"],
   transform: {
     "^.+\\.(ts)$": "ts-jest",
   },

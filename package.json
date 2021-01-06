@@ -6,11 +6,11 @@
   "repository": "https://github.com/skb1129/image-processing-api",
   "scripts": {
     "build": "tsc",
-    "coverage": "jest --runInBand --coverage",
+    "coverage": "jest --coverage",
     "dev": "ts-node src/server.ts",
     "prestart": "npm run build",
     "start": "node dist/server.js",
-    "test": "jest --runInBand"
+    "test": "jest"
   },
   "author": "Surya Kant Bansal <suryakantbansal97@gmail.com>",
   "license": "MIT",
